@@ -1,12 +1,9 @@
 def alphabetize(arr)
-  "This is the bee's knees".scan /\w/
-end
-
-def alphabetize(arr)
-  esperanto_alphabet = ["a", "b", "c", "ĉ", "d", "e", "f", "g", "ĝ", "h", "ĥ", "i", "j", "ĵ", "k", "l", "m", "n", "o", "p", "r", "s", "ŝ", "t", "u", "ŭ", "v", "z"]
+  esperanto_alphabet = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz".scan /\w/
   arr.sort_by do |word|
     word.split('').collect do |letter|
       esperanto_alphabet.index(letter)
     end
   end
 end
+

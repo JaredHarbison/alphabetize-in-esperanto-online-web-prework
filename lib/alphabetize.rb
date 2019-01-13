@@ -1,5 +1,5 @@
 def alphabetize(arr)
-  esperanto_alphabet = 
+  "This is the bee's knees".scan /\w/
 end
 
 def alphabetize(arr)

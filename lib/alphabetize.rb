@@ -1,5 +1,5 @@
 def alphabetize(arr)
-  esperanto_alphabet = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz".scan /\w/
+  esperanto_alphabet = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz".split
   arr.sort_by do |word|
     word.split('').collect do |letter|
       esperanto_alphabet.index(letter)
@@ -8,11 +8,3 @@ def alphabetize(arr)
 end
 
 
-def alphabetize(arr)
-  esperanto_alphabet = ["a", "b", "c", "ĉ", "d", "e", "f", "g", "ĝ", "h", "ĥ", "i", "j", "ĵ", "k", "l", "m", "n", "o", "p", "r", "s", "ŝ", "t", "u", "ŭ", "v", "z"]
-  arr.sort_by do |word|
-    word.split('').collect do |letter|
-      esperanto_alphabet.index(letter)
-    end
-  end
-end
